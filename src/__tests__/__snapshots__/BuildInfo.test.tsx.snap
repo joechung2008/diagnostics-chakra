@@ -1,0 +1,201 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BuildInfo > should handle different build version formats 1`] = `
+<DocumentFragment>
+  <script
+    nonce=""
+  >
+    ((e,i,s,u,m,a,l,h)=&gt;{let d=document.documentElement,w=["light","dark"];function p(n){(Array.isArray(e)?e:[e]).forEach(y=&gt;{let k=y==="class",S=k&&a?m.map(f=&gt;a[f]||f):m;k?(d.classList.remove(...S),d.classList.add(a&&a[n]?a[n]:n)):d.setAttribute(y,n)}),R(n)}function R(n){h&&w.includes(n)&&(d.style.colorScheme=n)}function c(){return window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}if(u)p(u);else try{let n=localStorage.getItem(i)||s,y=l&&n==="system"?c():n;p(y)}catch(n){}})("class","theme","system",null,["light","dark"],null,true,true)
+  </script>
+  <table
+    class="chakra-table__root css-a2tetu"
+  >
+    <thead
+      class="chakra-table__header"
+    >
+      <tr
+        class="chakra-table__row css-11ot24d"
+      >
+        <th
+          class="chakra-table__columnHeader css-kim7sg"
+        >
+          Name
+        </th>
+        <th
+          class="chakra-table__columnHeader css-kim7sg"
+        >
+          Value
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="chakra-table__body"
+    >
+      <tr
+        class="chakra-table__row css-11ot24d"
+      >
+        <td
+          class="chakra-table__cell css-1luypx0"
+        >
+          Build Version
+        </td>
+        <td
+          class="chakra-table__cell css-1luypx0"
+        >
+          v3.0.0-beta.1
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;
+
+exports[`BuildInfo > should render build version in table 1`] = `
+<DocumentFragment>
+  <script
+    nonce=""
+  >
+    ((e,i,s,u,m,a,l,h)=&gt;{let d=document.documentElement,w=["light","dark"];function p(n){(Array.isArray(e)?e:[e]).forEach(y=&gt;{let k=y==="class",S=k&&a?m.map(f=&gt;a[f]||f):m;k?(d.classList.remove(...S),d.classList.add(a&&a[n]?a[n]:n)):d.setAttribute(y,n)}),R(n)}function R(n){h&&w.includes(n)&&(d.style.colorScheme=n)}function c(){return window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}if(u)p(u);else try{let n=localStorage.getItem(i)||s,y=l&&n==="system"?c():n;p(y)}catch(n){}})("class","theme","system",null,["light","dark"],null,true,true)
+  </script>
+  <table
+    class="chakra-table__root css-a2tetu"
+  >
+    <thead
+      class="chakra-table__header"
+    >
+      <tr
+        class="chakra-table__row css-11ot24d"
+      >
+        <th
+          class="chakra-table__columnHeader css-kim7sg"
+        >
+          Name
+        </th>
+        <th
+          class="chakra-table__columnHeader css-kim7sg"
+        >
+          Value
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="chakra-table__body"
+    >
+      <tr
+        class="chakra-table__row css-11ot24d"
+      >
+        <td
+          class="chakra-table__cell css-1luypx0"
+        >
+          Build Version
+        </td>
+        <td
+          class="chakra-table__cell css-1luypx0"
+        >
+          1.2.3
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;
+
+exports[`BuildInfo > should render table row with build version data 1`] = `
+<DocumentFragment>
+  <script
+    nonce=""
+  >
+    ((e,i,s,u,m,a,l,h)=&gt;{let d=document.documentElement,w=["light","dark"];function p(n){(Array.isArray(e)?e:[e]).forEach(y=&gt;{let k=y==="class",S=k&&a?m.map(f=&gt;a[f]||f):m;k?(d.classList.remove(...S),d.classList.add(a&&a[n]?a[n]:n)):d.setAttribute(y,n)}),R(n)}function R(n){h&&w.includes(n)&&(d.style.colorScheme=n)}function c(){return window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}if(u)p(u);else try{let n=localStorage.getItem(i)||s,y=l&&n==="system"?c():n;p(y)}catch(n){}})("class","theme","system",null,["light","dark"],null,true,true)
+  </script>
+  <table
+    class="chakra-table__root css-a2tetu"
+  >
+    <thead
+      class="chakra-table__header"
+    >
+      <tr
+        class="chakra-table__row css-11ot24d"
+      >
+        <th
+          class="chakra-table__columnHeader css-kim7sg"
+        >
+          Name
+        </th>
+        <th
+          class="chakra-table__columnHeader css-kim7sg"
+        >
+          Value
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="chakra-table__body"
+    >
+      <tr
+        class="chakra-table__row css-11ot24d"
+      >
+        <td
+          class="chakra-table__cell css-1luypx0"
+        >
+          Build Version
+        </td>
+        <td
+          class="chakra-table__cell css-1luypx0"
+        >
+          2.1.0
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;
+
+exports[`BuildInfo > should render table with correct headers 1`] = `
+<DocumentFragment>
+  <script
+    nonce=""
+  >
+    ((e,i,s,u,m,a,l,h)=&gt;{let d=document.documentElement,w=["light","dark"];function p(n){(Array.isArray(e)?e:[e]).forEach(y=&gt;{let k=y==="class",S=k&&a?m.map(f=&gt;a[f]||f):m;k?(d.classList.remove(...S),d.classList.add(a&&a[n]?a[n]:n)):d.setAttribute(y,n)}),R(n)}function R(n){h&&w.includes(n)&&(d.style.colorScheme=n)}function c(){return window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}if(u)p(u);else try{let n=localStorage.getItem(i)||s,y=l&&n==="system"?c():n;p(y)}catch(n){}})("class","theme","system",null,["light","dark"],null,true,true)
+  </script>
+  <table
+    class="chakra-table__root css-a2tetu"
+  >
+    <thead
+      class="chakra-table__header"
+    >
+      <tr
+        class="chakra-table__row css-11ot24d"
+      >
+        <th
+          class="chakra-table__columnHeader css-kim7sg"
+        >
+          Name
+        </th>
+        <th
+          class="chakra-table__columnHeader css-kim7sg"
+        >
+          Value
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="chakra-table__body"
+    >
+      <tr
+        class="chakra-table__row css-11ot24d"
+      >
+        <td
+          class="chakra-table__cell css-1luypx0"
+        >
+          Build Version
+        </td>
+        <td
+          class="chakra-table__cell css-1luypx0"
+        >
+          1.0.0
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;
