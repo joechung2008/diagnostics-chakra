@@ -34,13 +34,6 @@
     "vitest": "^3.2.4"
   },
   "name": "diagnostics-chakra",
-  "overrides": {
-    "ansi-regex": "6.2.2",
-    "ansi-styles": "6.2.3",
-    "color-name": "2.0.0",
-    "is-arrayish": "0.3.2",
-    "supports-color": "10.2.2"
-  },
   "private": true,
   "scripts": {
     "build": "npm-run-all build:*",
