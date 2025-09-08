@@ -109,7 +109,7 @@ exports[`App > should render app with default environment 1`] = `
         role="tablist"
       >
         <button
-          aria-controls="tabs:«r1»:content-extensions"
+          aria-controls="extensions-tab"
           aria-selected="true"
           class="chakra-tabs__trigger css-19t98pl"
           data-focus=""
@@ -129,6 +129,7 @@ exports[`App > should render app with default environment 1`] = `
           Extensions
         </button>
         <button
+          aria-controls="build-tab"
           aria-selected="false"
           class="chakra-tabs__trigger css-19t98pl"
           data-orientation="horizontal"
@@ -146,6 +147,7 @@ exports[`App > should render app with default environment 1`] = `
           Build Information
         </button>
         <button
+          aria-controls="server-tab"
           aria-selected="false"
           class="chakra-tabs__trigger css-19t98pl"
           data-orientation="horizontal"
@@ -166,6 +168,8 @@ exports[`App > should render app with default environment 1`] = `
     </div>
     <div
       class="css-177dxab"
+      id="extensions-tab"
+      role="tabpanel"
     >
       <div
         class="css-e3v19i"

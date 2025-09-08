@@ -141,13 +141,19 @@ const App: React.FC = () => {
         onValueChange={(details) => setSelectedTab(details.value)}
       >
         <Tabs.List>
-          <Tabs.Trigger value="extensions">Extensions</Tabs.Trigger>
-          <Tabs.Trigger value="build">Build Information</Tabs.Trigger>
-          <Tabs.Trigger value="server">Server Information</Tabs.Trigger>
+          <Tabs.Trigger aria-controls="extensions-tab" value="extensions">
+            Extensions
+          </Tabs.Trigger>
+          <Tabs.Trigger aria-controls="build-tab" value="build">
+            Build Information
+          </Tabs.Trigger>
+          <Tabs.Trigger aria-controls="server-tab" value="server">
+            Server Information
+          </Tabs.Trigger>
         </Tabs.List>
       </Tabs.Root>
       {selectedTab === "extensions" && diagnostics?.extensions && (
-        <Box flex="1" overflowY="auto">
+        <Box id="extensions-tab" flex="1" overflowY="auto" role="tabpanel">
           <Flex flexDirection="row" gap="4" h="100%">
             <Extensions
               extensions={diagnostics.extensions}
@@ -158,12 +164,12 @@ const App: React.FC = () => {
         </Box>
       )}
       {selectedTab === "build" && diagnostics?.buildInfo && (
-        <Box flex="1" overflowY="auto">
+        <Box id="build-tab" flex="1" overflowY="auto" role="tabpanel">
           <BuildInfo {...diagnostics.buildInfo} />
         </Box>
       )}
       {selectedTab === "server" && diagnostics?.serverInfo && (
-        <Box flex="1" overflowY="auto">
+        <Box id="server-tab" flex="1" overflowY="auto" role="tabpanel">
           <ServerInfo {...diagnostics.serverInfo} />
         </Box>
       )}
