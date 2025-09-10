@@ -1,12 +1,11 @@
-import globals from "globals";
+import prettierConfig from "eslint-config-prettier";
+import prettierPlugin from "eslint-plugin-prettier";
+import reactDomPlugin from "eslint-plugin-react-dom";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
-import tseslint from "typescript-eslint";
-import { globalIgnores } from "eslint/config";
-import prettierPlugin from "eslint-plugin-prettier";
-import prettierConfig from "eslint-config-prettier";
 import reactPlugin from "eslint-plugin-react-x";
-import reactDomPlugin from "eslint-plugin-react-dom";
+import { globalIgnores } from "eslint/config";
+import tseslint from "typescript-eslint";
 
 export default [
   globalIgnores(["coverage", "dist", "*.config.{js,ts}"]),
@@ -20,7 +19,6 @@ export default [
     files: ["**/*.{ts,tsx}"],
     languageOptions: {
       ecmaVersion: 2020,
-      globals: globals.browser,
     },
     plugins: {
       prettier: prettierPlugin,
